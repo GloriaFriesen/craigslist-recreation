@@ -1,1 +1,9 @@
-<h2>This listing has an id number: {{listingId}}</h2>
+<div>
+  <h2>{{listingToDisplay.item}}</h2>
+  <h4>price: ${{listingToDisplay.price}}</h4>
+  <p id="categoryItalics">category: {{listingToDisplay.category}}</p>
+  <img src="../../assets/images/{{listingToDisplay.image}}">
+  <h3>description: </h3>
+  <h4>{{listingToDisplay.description}}</h4>
+  <p>seller: {{listingToDisplay.seller}}</p>
+</div>
