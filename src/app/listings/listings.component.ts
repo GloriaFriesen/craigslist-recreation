@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Listing } from '../listing.model';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-listings',
@@ -13,9 +14,13 @@ export class ListingsComponent implements OnInit {
     new Listing ("Kayak", 300, "water sports", "kayak.jpg", "Couple of bumps and bruises, but still keeps out the water. No holes.", "Grace", 3)
   ];
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
   }
+
+  goToDetailPage(clickedListing: Listing) {
+    this.router.navigate(['listings', clickedListing.id]);
+  };
 
 }

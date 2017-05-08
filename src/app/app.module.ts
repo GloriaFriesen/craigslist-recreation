@@ -8,13 +8,15 @@ import { WelcomeComponent } from './welcome/welcome.component';
 import { routing } from './app.routing';
 import { AboutComponent } from './about/about.component';
 import { ListingsComponent } from './listings/listings.component';
+import { ListingDetailComponent } from './listing-detail/listing-detail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     WelcomeComponent,
     AboutComponent,
-    ListingsComponent
+    ListingsComponent,
+    ListingDetailComponent
   ],
   imports: [
     BrowserModule,

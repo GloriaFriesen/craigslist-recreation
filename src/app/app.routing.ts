@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { AboutComponent }   from './about/about.component';
 import { ListingsComponent } from './listings/listings.component';
+import { ListingDetailComponent } from './listing-detail/listing-detail.component';
 
 
 const appRoutes: Routes = [
@@ -17,6 +18,10 @@ const appRoutes: Routes = [
   {
     path: 'listings',
     component: ListingsComponent
+  },
+  {
+    path: 'listings/:id',
+    component: ListingDetailComponent
   }
 ];
 
